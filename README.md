@@ -8,30 +8,52 @@
 
 ```text
 📂 Scripts
- ┣ 📂 Моя_Кнопка.button              <-- Одиночная кнопка на главной панели
- ┃  ┣ 📄 script.cs
- ┃  ┣ 📄 UI.cs                       <-- (Новое!) Можно класть сколько угодно .cs файлов
- ┃  ┗ 📄 icon.png
+ ┣ 📄 config.json
  ┣ 📂 Выпадающий_Список.folder       <-- Выпадающий список на главной панели
  ┃  ┣ 📄 config.json
- ┃  ┣ 📂 Пункт1.button
+ ┃  ┣ 📂 Кнопка1.button
+ ┃  ┃  ┣ 📄 config.json
+ ┃  ┃  ┣ 📄 icon.png
  ┃  ┃  ┗ 📄 script.cs
- ┃  ┗ 📂 Пункт2.button
+ ┃  ┣ 📂 Кнопка2.button
+ ┃  ┃  ┣ 📄 config.json
+ ┃  ┃  ┣ 📄 icon.png
+ ┃  ┃  ┗ 📄 script.cs
+ ┃  ┗ 📂 Кнопка3.button
+ ┃     ┣ 📄 config.json
+ ┃     ┣ 📄 icon.png
  ┃     ┗ 📄 script.cs
+ ┣ 📂 Кнопка с сервера.button
+ ┃  ┣ 📄 config.json
+ ┃  ┗ 📄 remote_files.json
+ ┣ 📂 Моя_Кнопка.button              <-- Одиночная кнопка на главной панели
+ ┃  ┣ 📄 config.json
+ ┃  ┣ 📄 icon.png
+ ┃  ┗ 📄 script.cs
+ ┣ 📂 Панель_Действий.actions        <-- Боковая панель действий (при выделении объекта)
+ ┃  ┣ 📄 config.json
+ ┃  ┣ 📂 Кнопка ПД1.button
+ ┃  ┃  ┣ 📄 config.json
+ ┃  ┃  ┣ 📄 icon.png
+ ┃  ┃  ┗ 📄 script.cs
+ ┃  ┗ 📂 Панель.folder               <-- Выпадающие списки внутри панели действий
+ ┃     ┣ 📂 Вложенная_панель.folder
+ ┃     ┃  ┗ 📂 Кнопка ПД3.button
+ ┃     ┃     ┗ 📄 script.cs
+ ┃     ┗ 📂 Кнопка ПД2.button
+ ┃        ┗ 📄 script.cs
  ┣ 📂 Правый_Клик.context            <-- Меню по правому клику мыши
  ┃  ┣ 📄 config.json
- ┃  ┣ 📂 Пункт1.button
+ ┃  ┣ 📂 Кнопка ПК1.button
+ ┃  ┃  ┣ 📄 config.json
+ ┃  ┃  ┣ 📄 icon.png
  ┃  ┃  ┗ 📄 script.cs
- ┃  ┗ 📂 Подменю.folder              <-- (Новое!) Многоуровневые контекстные меню
- ┃     ┣ 📄 config.json
- ┃     ┗ 📂 Вложенная_кнопка.button
+ ┃  ┗ 📂 Подменю.folder              <-- Многоуровневые контекстные меню
+ ┃     ┣ 📂 Вложеное_подменю.folder
+ ┃     ┃  ┗ 📂 Кнопка ПК2.button
+ ┃     ┃     ┗ 📄 script.cs
+ ┃     ┗ 📂 Кнопка ПК2.button
  ┃        ┗ 📄 script.cs
- ┣ 📂 Панель_Действий.actions        <-- Боковая панель действий (при выделении объекта)
- ┃  ┣ 📄 config.json              
- ┃  ┣ 📂 Кнопка.button
- ┃  ┃  ┗ 📄 script.cs
- ┃  ┗ 📂 Список.folder               <-- Выпадающие списки внутри панели действий
- ┃     ┗ ...
  ┗ 📂 lib                            <-- Общие библиотеки (DLL и C# код)
     ┣ 📄 EPPlus.dll
     ┗ 📄 MyHelpers.cs

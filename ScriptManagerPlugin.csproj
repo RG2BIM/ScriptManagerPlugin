@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>ScriptManagerPlugin</AssemblyName>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>bin\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <Platforms>x64</Platforms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="ScriptManagerPlugin.rndesc" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="TestScript.cs" />
+    <Compile Remove="publish\**\*.cs" />
+    <Compile Remove="Scripts\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Renga.NET8.PluginUtility">
+      <HintPath>..\SDK\Net\Renga.NET8.PluginUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Renga">
+      <HintPath>..\Interop.Renga.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+
+
+</Project>

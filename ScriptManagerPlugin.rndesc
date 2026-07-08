@@ -1,0 +1,9 @@
+<RengaPlugin>
+	<Name>Script Manager</Name>
+	<Version>5.3.0.0</Version>
+	<RequiredAPIVersion>2.48</RequiredAPIVersion>
+	<Vendor>Руслан Н.(nruslan2@yandex.ru)</Vendor>
+	<Copyright>Copyright 2026</Copyright>
+	<PluginFilename>ScriptManagerPlugin.dll</PluginFilename>
+	<PluginType>Net8</PluginType>
+</RengaPlugin>
